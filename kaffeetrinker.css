@@ -391,3 +391,18 @@ header, .context-menu, .megamenu-content, footer{
 .html-for-mac .context-menu {
     --item-hover-bg-color: #E6F0FE;
 }
+
+.actor {
+    fill: #f0f0f0;
+    stroke: none;
+    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+}
+
+.actor-line {
+  stroke: #505050;
+}
+
+.messageLine0 {
+  stroke: #202020;
+}
+
