@@ -405,3 +405,13 @@ header, .context-menu, .megamenu-content, footer{
 .messageLine0 {
   stroke: #202020;
 }
+
+.loopLine {
+  stroke: #cccccc;
+}
+
+.labelBox {
+  fill: #cccccc;
+  stroke: none;
+}
+
