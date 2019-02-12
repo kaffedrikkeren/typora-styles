@@ -418,3 +418,30 @@ header, .context-menu, .megamenu-content, footer{
 .md-diagram-panel {
   border: none;
 }
+
+.labelBox {
+  stoke: none;
+  fill: none;
+}
+
+.loopLine {
+    stroke-width: 1;
+    stroke-dasharray: "2 2";
+    marker-end:"url(#arrowhead)";
+    stroke: #999999;
+}
+
+.labelText {
+    fill: #e0e0e0;
+    stroke:none;
+}
+
+.note {
+    stroke: none;
+    fill: #f9f9f9;
+}
+
+.noteText {
+    fill:black;
+    stroke:none;
+}
