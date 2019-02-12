@@ -415,3 +415,7 @@ header, .context-menu, .megamenu-content, footer{
   stroke: none;
 }
 
+.md-diagram-panel {
+  border: none;
+}
+
