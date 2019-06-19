@@ -399,20 +399,16 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 .actor-line {
-  stroke: #505050;
+    stroke: #505050;
 }
 
 .messageLine0 {
-  stroke: #202020;
+   stroke: #505050;
+   stroke-width: 2;
 }
 
-.loopLine {
-  stroke: #cccccc;
-}
-
-.labelBox {
-  fill: #cccccc;
-  stroke: none;
+.messageText {
+    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
 }
 
 .md-diagram-panel {
@@ -429,11 +425,17 @@ header, .context-menu, .megamenu-content, footer{
     stroke-dasharray: "2 2";
     marker-end:"url(#arrowhead)";
     stroke: #999999;
+    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+}
+
+.loopText {
+    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
 }
 
 .labelText {
     fill: #e0e0e0;
     stroke:none;
+    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
 }
 
 .note {
@@ -444,4 +446,5 @@ header, .context-menu, .megamenu-content, footer{
 .noteText {
     fill:black;
     stroke:none;
+    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
 }
