@@ -1,10 +1,17 @@
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
+    --diagram-fill-color: #f0f0f0;
+    --diagram-font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+    --diagram-line-color: #505050;
+    --diagram-light-line-color: #999999;
+    --diagram-label-color: #e0e0e0;
+    --node-border: none;
+    --node-fill: #f0f0f0;
 }
 
 html {
-    font-size: 14pt;
+    font-size: 11pt;
 }
 
 body {
@@ -15,9 +22,8 @@ body {
 
 #write{
     max-width: 860px;
-  	margin: 0 auto;
-  	padding: 20px 30px 40px 30px;
-	padding-top: 20px;
+    padding: 20px 30px 40px 30px;
+    padding-top: 20px;
     padding-bottom: 100px;
 }
 #write > ul:first-child,
@@ -392,25 +398,33 @@ header, .context-menu, .megamenu-content, footer{
     --item-hover-bg-color: #E6F0FE;
 }
 
+.node rect, .node circle, .node ellipse, .node polygon {
+   font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+   fill: #f0f0f0;
+   stroke: none;
+}
+
+.label {
+  font-family: var(--diagram-font-family);
+}
+
 .actor {
-    fill: #f0f0f0;
+    fill: var(--diagram-fill-color);
     stroke: none;
-    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
-    font-size: 150%;
+    font-family: var(--diagram-font-family);
 }
 
 .actor-line {
-    stroke: #505050;
+    stroke: var(--diagram-line-color);
 }
 
 .messageLine0 {
-   stroke: #202020;
+   stroke: var(--diagram-line-color);
    stroke-width: 2;
 }
 
 .messageText {
-    font-size: 150%;
-    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+    font-family: var(--diagram-font-family);
 }
 
 .md-diagram-panel {
@@ -420,38 +434,33 @@ header, .context-menu, .megamenu-content, footer{
 .labelBox {
   stoke: none;
   fill: none;
-  font-size: 150%;
 }
 
 .loopLine {
     stroke-width: 1;
     stroke-dasharray: "2 2";
     marker-end:"url(#arrowhead)";
-    stroke: #999999;
-    font-size: 150%;
-    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+    stroke: var(--diagram-light-line-color);
+    font-family: var(--diagram-font-family);
 }
 
 .loopText {
-    font-size: 150%;
-    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+    font-family: var(--diagram-font-family);
 }
 
 .labelText {
-    fill: #e0e0e0;
+    fill: var(--diagram-label-color);
     stroke:none;
-    font-size: 150%;
-    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+    font-family: var(--diagram-font-family);
 }
 
 .note {
     stroke: none;
-    fill: #f9f9f9;
+    fill: var(--diagram-fill-color);
 }
 
 .noteText {
     fill:black;
     stroke:none;
-    font-size: 150%;
-    font-family: 'Source Sans', Helvetica, Arial, sans-serif;
+    font-family: var(--diagram-font-family);
 }
