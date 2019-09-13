@@ -463,3 +463,14 @@ header, .context-menu, .megamenu-content, footer{
     stroke:none;
     font-family: var(--diagram-font-family);
 }
+
+.cluster rect {
+    fill: none !important;
+    stroke: var(--diagram-light-line-color) !important;
+    rx: 0.5em !important;
+}
+
+.cluster text {
+    font-family: var(--diagram-font-family);
+}
+

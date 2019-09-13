@@ -8,6 +8,8 @@
     --diagram-label-color: #e0e0e0;
     --node-border: none;
     --node-fill: #f0f0f0;
+    --cluster-fill: none;
+    --cluster-border: #cccccc;
 }
 
 html {
@@ -462,5 +464,15 @@ header, .context-menu, .megamenu-content, footer{
 .noteText {
     fill:black;
     stroke:none;
+    font-family: var(--diagram-font-family);
+}
+
+.cluster rect {
+    fill: none !important;
+    stroke: var(--diagram-light-line-color) !important;
+    rx: 0.5em !important;
+}
+
+.cluster text {
     font-family: var(--diagram-font-family);
 }
